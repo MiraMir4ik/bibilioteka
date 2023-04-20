@@ -70,14 +70,14 @@ int main() {
 	■ Сортировка массива по издательству.*/
 
 	setlocale(LC_ALL, "rus");
-	book book1 = { "forest song","lesya ukrainka","folio","drama" };
-	book book2 = { "kobsar","taras shevchenko","prosvita","prosa" };
-	book book3 = { "mojsej","ivan franco","kolo","poema" };
-	book book4 = { "fedko halamidnyk","volodimir vinnichenko","prosvita","story" };
-	book book5 = { "marusya churaj","lina kostenco","vivat","romance" };
+	book book1 = { "Forest song","Lesya Ukrainka","Folio","drama" };
+	book book2 = { "Kobsar","Taras Shevchenko","Prosvita","prosa" };
+	book book3 = { "Mojsej","Ivan Franco","Kolo","poema" };
+	book book4 = { "Fedko halamidnyk","Volodimir Vinnichenko","Prosvita","story" };
+	book book5 = { "Marusya churaj","Lina Kostenco","Vivat","romance" };
 	book arr[5] = { book1,book2,book3,book4,book5 };
 
-	cout << "---------------------------- библиотека ------------------------------------" << endl << endl;
+	cout << "|-------------------------------------------------\------ библиотека ------/----------------------------------------|" << endl << endl;
 	cout << "книги:" << endl;
 	print(arr);
 	cout << endl;
