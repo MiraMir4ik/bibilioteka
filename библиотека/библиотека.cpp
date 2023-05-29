@@ -11,7 +11,7 @@ struct book
 
 };
 
-void print(book arr[]) {//Міра
+void print(book arr[]) {
 	cout << endl;
 	cout << "|-----------------------------------------------------------------------------------|" << endl;
 	for (int i = 0; i < 5; i++) {
@@ -20,7 +20,7 @@ void print(book arr[]) {//Міра
 	}
 }
 
-void searchByAuthor(book library[], int size, const char* author) {//Лабенко максим
+void searchByAuthor(book library[], int size, const char* author) {
 	bool found = false;
 	for (int i = 0; i < size; i++) {
 		if (strcmp(library[i].autor, author) == 0) {
@@ -33,7 +33,7 @@ void searchByAuthor(book library[], int size, const char* author) {//Лабен�
 	}
 }
 
-void searchByTitle(book library[], int size, const char* title) {//Лабенко Максим
+void searchByTitle(book library[], int size, const char* title) {
 	bool found = false;
 	for (int i = 0; i < size; i++) {
 		if (strcmp(library[i].name, title) == 0) {
@@ -61,7 +61,7 @@ void sort_byName(book arr[], int size) {//Сахаров Михайло
 }
 
 
-void sort_byPublisher(book arr[], int size ) {//Сахаров Михайло
+void sort_byPublisher(book arr[], int size ) {
 	for (int i = 0; i < size - 1; i++) {
 		for (int j = 0; j < size - i - 1; j++) {
 			if (strcmp(arr[j].publisher, arr[j + 1].publisher) > 0) {
@@ -75,7 +75,7 @@ void sort_byPublisher(book arr[], int size ) {//Сахаров Михайло
 }
 
 
-void sort_byAutor(book arr[], int size) {//Міра
+void sort_byAutor(book arr[], int size) {
 	for (int i = 0; i < size - 1; i++) {
 		for (int j = 0; j < size - i - 1; j++) {
 			if (strcmp(arr[j].autor, arr[j + 1].autor) > 0) {
@@ -90,7 +90,7 @@ void sort_byAutor(book arr[], int size) {//Міра
 
 
 
-void edit_book(book arr[]) { //Міра
+void edit_book(book arr[]) { 
 	size_t choice;
 	cout << "Выберите книгу котроую хотите редактировать(введите только номер книги):";
 	cin >> choice;
